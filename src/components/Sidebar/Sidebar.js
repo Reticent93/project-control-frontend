@@ -1,4 +1,4 @@
-import {  Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { Container, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import ToggleColorMode from "../Darkmode/DarkMode";
 import Box from "@mui/material/Box";
 import  HomeOutlined  from '@mui/icons-material/HomeOutlined';
@@ -21,27 +21,23 @@ const theme = createTheme({
         primary: {
             main: '#81e6d6',
             mode: 'dark',
+            margin: '0',
+            padding: '0',
+            width: '30%',
         },
     },
 })
 
     return (
         <ThemeProvider theme={theme}>
-        <Box sx={{ width: '15%', bgcolor: 'white', color: '#909090', '&& .Mui-selected, && .Mui-selected:hover': {
-                bgcolor: 'red',
-                '&, & .MuiListItemIcon-root': {
-                    color: 'pink',
-                },
-            },
+        <Box sx={{ bgcolor: 'blue', color: '#909090',   width: 250, height: '100vh',
             '& .MuiListItemButton-root:hover': {
                 bgcolor: '#606060',
                 '&, & .MuiListItemIcon-root': {
                     color: 'white',
                 },
-            }, flexGrow: 2, minHeight: '100vh'}}>
+            }, flexGrow: 2, minHeight: '100%'}}>
 
-                <List sx={{pt: 0}}>
-                    <nav aria-label="secondary mailbox folders">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon  sx={{pt:0}}>
@@ -107,8 +103,7 @@ const theme = createTheme({
                             <ListItemText primary="Employee" />
                         </ListItemButton>
                     </ListItem>
-            </nav>
-                </List>
+
         </Box>
         </ThemeProvider>
     );
