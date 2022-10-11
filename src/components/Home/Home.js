@@ -4,6 +4,8 @@ import Sidebar from "../Sidebar/Sidebar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Widget from "../Widget/Widget";
+import Featured from "../Featured/Featured";
+import Charts from "../Charts/Charts";
 
 
 const Home = () => {
@@ -19,6 +21,10 @@ const Home = () => {
                     <Widget type={'orders'}/>
                     <Widget type={'inventory'}/>
                     <Widget type={'suppliers'}/>
+                </Box>
+                <Box sx={{display: 'flex'}}>
+                    <Featured sx={{flex: 8}} />
+                    <Charts sx={{flex: 8}} />
                 </Box>
             </Grid>
         </Container>
