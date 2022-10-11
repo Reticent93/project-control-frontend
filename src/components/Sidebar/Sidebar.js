@@ -1,4 +1,4 @@
-import { Container, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { Container, Divider, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import ToggleColorMode from "../Darkmode/DarkMode";
 import Box from "@mui/material/Box";
 import  HomeOutlined  from '@mui/icons-material/HomeOutlined';
@@ -13,6 +13,7 @@ import { green } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import Grid2 from "@mui/material/Unstable_Grid2";
 
 
 const Sidebar = () => {
@@ -21,29 +22,26 @@ const theme = createTheme({
         primary: {
             main: '#81e6d6',
             mode: 'dark',
-            margin: '0',
-            padding: '0',
-            width: '30%',
         },
     },
 })
 
     return (
         <ThemeProvider theme={theme}>
-        <Box sx={{ bgcolor: 'blue', color: '#909090',   width: 250, height: '100vh',
+        <Grid  sx={{ padding: '0px',bgcolor: '#194775', color: '#909090', width: '250px',
             '& .MuiListItemButton-root:hover': {
                 bgcolor: '#606060',
                 '&, & .MuiListItemIcon-root': {
                     color: 'white',
                 },
-            }, flexGrow: 2, minHeight: '100%'}}>
+            }}}>
 
                     <ListItem disablePadding>
                         <ListItemButton>
-                            <ListItemIcon  sx={{pt:0}}>
+                            <ListItemIcon  >
                                 <HomeOutlined color={'primary'}  />
                             </ListItemIcon>
-                            <ListItemText primary="Home" />
+                            <ListItemText primary="Dashboard" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
@@ -104,7 +102,7 @@ const theme = createTheme({
                         </ListItemButton>
                     </ListItem>
 
-        </Box>
+        </Grid>
         </ThemeProvider>
     );
 }

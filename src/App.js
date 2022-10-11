@@ -16,8 +16,7 @@ function App() {
 
 
     return (
-        <div sx={{margin: 0}}>
-
+        <div>
             <Navbar/>
                 <Routes>
                     <Route path="/">
