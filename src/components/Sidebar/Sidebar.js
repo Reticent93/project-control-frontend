@@ -8,6 +8,7 @@ import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined
 import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurnedInOutlined';
 import PaymentOutlinedIcon from '@mui/icons-material/PaymentOutlined';
 import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import { green } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -80,9 +81,9 @@ const theme = createTheme({
                     <ListItem disablePadding>
                         <ListItemButton component="a" href="#simple-list">
                             <ListItemIcon>
-                                <LocalShippingOutlinedIcon color={'primary'}/>
+                                <PrecisionManufacturingIcon color={'primary'} />
                             </ListItemIcon>
-                            <ListItemText primary="Shipping" />
+                            <ListItemText primary="Supplier" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>

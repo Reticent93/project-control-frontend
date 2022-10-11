@@ -15,10 +15,10 @@ const Home = () => {
             <Sidebar maxWidth={'sm'} sx={{}}/>
             <Grid sx={{flex: 8}} >
                 <Box sx={{display: 'flex'}}>
-                    <Widget/>
-                    <Widget/>
-                    <Widget/>
-                    <Widget/>
+                    <Widget type={'invoices'}/>
+                    <Widget type={'orders'}/>
+                    <Widget type={'inventory'}/>
+                    <Widget type={'suppliers'}/>
                 </Box>
             </Grid>
         </Container>
