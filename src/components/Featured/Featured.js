@@ -1,8 +1,7 @@
-import { PureComponent } from "react";
-import { Box, Card, CircularProgress, List, ListItem, Typography } from "@mui/material";
+import { Box, Card,  ListItem, Typography } from "@mui/material";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Grid2 from "@mui/material/Unstable_Grid2";
 
@@ -23,7 +22,7 @@ const Featured = () => {
                 p: 2,
                 gap: '20px',
                 justifyContent: 'space-between',
-                flex: 3,
+                flex: 2,
                 m: 2,
                 boxShadow: '10px 10px 10px 10px lightgrey',
                 borderRadius: '10px',
@@ -37,7 +36,7 @@ const Featured = () => {
                 </Box>
                 <Box sx={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column', alignItems: 'center', gap: '15px', p:2, }}>
                     <Grid2 container spacing={2} sx={{width: '150px', height: '150px'}}>
-                    <CircularProgressbar value={70} text={'70%'} strokeWidth={3}/>
+                    <CircularProgressbar value={70} text={'70%'} strokeWidth={3} styles={buildStyles({textColor: '#81e6d6', pathColor: '#81e6d6'})}/>
                     </Grid2>
                     <Typography variant={'h6'} color={'primary'}>Total sales made today</Typography>
                     <Typography variant={'h3'} color={'primary'}>$1,960</Typography>
