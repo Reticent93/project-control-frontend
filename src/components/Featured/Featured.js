@@ -39,11 +39,11 @@ const Featured = () => {
                     <CircularProgressbar value={70} text={'70%'} strokeWidth={3} styles={buildStyles({textColor: '#81e6d6', pathColor: '#81e6d6'})}/>
                     </Grid2>
                     <Typography variant={'h6'} color={'primary'}>Total sales made today</Typography>
-                    <Typography variant={'h3'} color={'primary'}>$1,960</Typography>
+                    <Typography variant={'h3'} color={'#e68191'}>$1,960</Typography>
                 </Box>
                 <ListItem sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', }}>
                     <Typography variant={'h6'} color={'primary'}>Target</Typography>
-                    <Typography variant={'h6'} color={'primary'}>$2,800</Typography>
+                    <Typography variant={'h6'} color={'#e68191'}>$2,800</Typography>
                 </ListItem>
             </Card>
         </ThemeProvider>

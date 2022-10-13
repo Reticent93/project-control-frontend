@@ -1,44 +1,16 @@
-import { Box, Card, Typography } from "@mui/material";
+import {  Card, Typography } from "@mui/material";
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const Charts = () => {
 
     const data = [
-        {
-            name: "January",
-
-            Total: 12001
-        },
-        {
-            name: "February",
-
-            Total: 36102
-        },
-        {
-            name: "March",
-
-            Total: 22903
-        },
-        {
-            "name": "April",
-
-            Total: 18004
-        },
-        {
-            "name": "May",
-
-            Total: 21815
-        },
-        {
-            "name": "June",
-
-            Total: 25006
-        },
-        {
-            "name": "July",
-
-            Total: 21007
-        }
+        { name: "January",  Total: 12001 },
+        { name: "February", Total: 36102 },
+        { name: "March", Total: 22903 },
+        { name: "April",Total: 18004 },
+        { name: "May", Total: 21815 },
+        { name: "June", Total: 25006 },
+        { name: "July", Total: 21007 }
     ]
 
     return (

@@ -1,4 +1,4 @@
-import { Button, Card, Grid, Link, Paper, TextField, Box, Container, List, ListItem, Typography } from "@mui/material";
+import { Card,  Box,  Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { green } from "@mui/material/colors";
 import RequestQuoteOutlinedIcon from '@mui/icons-material/RequestQuoteOutlined';
@@ -79,7 +79,7 @@ const Widget = ({type}) => {
             }}>
                 <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', }}>
                     <Typography variant={'h6'} sx={{color: '#909090'}} >{data.title}</Typography>
-                    <Typography variant={'h4'} sx={{color: '#909090', }}>{data.isMoney && '$'} {amount}</Typography>
+                    <Typography variant={'h4'} sx={{color: '#e68191', }}>{data.isMoney && '$'} {amount}</Typography>
                     <Typography  sx={{borderBottom: '1px solid #909090', color: '#909090'}}>{data.link}</Typography>
                 </Box>
                 <Box sx={{display: 'flex', flexDirection: 'column-reverse', justifyContent: 'space-between', color: '#909090' }}>

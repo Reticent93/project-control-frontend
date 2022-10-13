@@ -1,11 +1,10 @@
-import { Button, Container, Grid, List, Typography } from "@mui/material";
-import Login from "../Login/Login";
+import { Card, Container, Grid, Typography, } from "@mui/material";
 import Sidebar from "../Sidebar/Sidebar";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Widget from "../Widget/Widget";
 import Featured from "../Featured/Featured";
 import Charts from "../Charts/Charts";
+import TableChart from "../TableChart/TableChart";
 
 
 const Home = () => {
@@ -26,6 +25,22 @@ const Home = () => {
                     <Featured sx={{flex: 8}} />
                     <Charts sx={{flex: 8}} />
                 </Box>
+                <Grid sx={{flex: 8}}>
+                    <Card sx={{display: 'flex',
+                        p: 3,
+                        gap: '20px',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        flex: 5,
+                        m: 2,
+                        boxShadow: '10px 10px 10px 10px lightgrey',
+                        borderRadius: '10px',
+                        height: 'auto',
+                        bgcolor: '#194775',}}>
+                    <Typography variant={'h6'} sx={{color: '#909090'}}>List of Invoices</Typography>
+                        <TableChart />
+                    </Card>
+                </Grid>
             </Grid>
         </Container>
 
