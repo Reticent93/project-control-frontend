@@ -1,17 +1,15 @@
-import {  Typography } from "@mui/material";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell, {tableCellClasses} from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper'
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { styled } from '@mui/material/styles';
 
 const TableChart = () => {
 
-    const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    const StyledTableCell = styled(TableCell)(({  }) => ({
         [`&.${tableCellClasses.head}`]: {
             fontSize: 18,
             // backgroundColor: '#e68191',
@@ -23,7 +21,7 @@ const TableChart = () => {
         },
     }));
 
-    const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    const StyledTableRow = styled(TableRow)(({  }) => ({
         '&:nth-of-type(odd)': {
             // backgroundColor: theme.palette.action.hover,
         },

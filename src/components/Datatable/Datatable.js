@@ -1,15 +1,15 @@
 import { Box, Typography } from "@mui/material";
 
-const Single = () => {
+const Datatable = () => {
 
     return (
         <Box>
             <Typography component="h1" variant="h5">
-                Single
+                Datatable
             </Typography>
         </Box>
     );
 }
 
 
-export default Single;
+export default Datatable;

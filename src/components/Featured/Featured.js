@@ -36,7 +36,7 @@ const Featured = () => {
                 </Box>
                 <Box sx={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column', alignItems: 'center', gap: '15px', p:2, }}>
                     <Grid2 container spacing={2} sx={{width: '150px', height: '150px'}}>
-                    <CircularProgressbar value={70} text={'70%'} strokeWidth={3} styles={buildStyles({textColor: '#81e6d6', pathColor: '#81e6d6'})}/>
+                    <CircularProgressbar value={70} text={'70%'} strokeWidth={3} styles={buildStyles({textColor: '#e68191', pathColor: '#81e6d6'})}/>
                     </Grid2>
                     <Typography variant={'h6'} color={'primary'}>Total sales made today</Typography>
                     <Typography variant={'h3'} color={'#e68191'}>$1,960</Typography>

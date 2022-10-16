@@ -12,9 +12,9 @@ const Home = () => {
 
     return (
 
-        <Container disableGutters maxWidth={'false'} sx={{display: 'flex', height: '100vh', margin: 0}}>
-            <Sidebar maxWidth={'sm'} sx={{}}/>
-            <Grid sx={{flex: 8}} >
+        <Container disableGutters maxWidth={'false'} sx={{display: 'flex', margin: 0}}>
+            <Sidebar maxWidth={'sm'}/>
+            <Grid sx={{flex: 8,}} >
                 <Box sx={{display: 'flex'}}>
                     <Widget type={'invoices'}/>
                     <Widget type={'orders'}/>
