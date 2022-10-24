@@ -24,6 +24,7 @@ const TableChart = () => {
     const StyledTableRow = styled(TableRow)(({  }) => ({
         '&:nth-of-type(odd)': {
             // backgroundColor: theme.palette.action.hover,
+
         },
         // hide last border
         '&:last-child td, &:last-child th': {
@@ -70,12 +71,12 @@ const TableChart = () => {
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                    <StyledTableRow key={row.id} color={'primary'}>
+                    <StyledTableRow key={row.id}>
                         <StyledTableCell>{row.id}</StyledTableCell>
                         <StyledTableCell>{row.status}</StyledTableCell>
                         <StyledTableCell>{row.issuer}</StyledTableCell>
-                        <StyledTableCell style={{color: '#e68191'}}>{row.total}</StyledTableCell>
-                        <StyledTableCell style={{color: '#e68191'}}>{row.paid}</StyledTableCell>
+                        <StyledTableCell>{row.total}</StyledTableCell>
+                        <StyledTableCell>{row.paid}</StyledTableCell>
                         <StyledTableCell>{row.Due}</StyledTableCell>
                         <StyledTableCell>{row.Date}</StyledTableCell>
                     </StyledTableRow>

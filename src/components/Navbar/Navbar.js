@@ -64,6 +64,7 @@ const Navbar = () => {
                 main: '#81e6d6',
             },
 
+
         }
 
     })

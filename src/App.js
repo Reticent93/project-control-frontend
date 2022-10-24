@@ -22,7 +22,7 @@ function App() {
                     <Route path="/">
                         <Route index element={<Home/>}/>
                         <Route path='login' element={<Login/>}/>
-                        <Route path='Invoices'>
+                        <Route path='Orders'>
                             <Route index element={<List/>}/>
                             <Route path=':userId' element={<Single/>}/>
                             <Route path='new' element={<New/>}/>
