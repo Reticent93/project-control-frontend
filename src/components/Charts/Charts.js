@@ -1,7 +1,7 @@
 import {  Card, Typography } from "@mui/material";
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
-const Charts = () => {
+const Charts = ({aspect, title}) => {
 
     const data = [
         { name: "January",  Total: 12001 },
@@ -27,8 +27,8 @@ const Charts = () => {
             height: 'auto',
             bgcolor: '#194775',
         }}>
-            <Typography variant={'h6'} sx={{color: '#909090'}} >Last 6 Months (Sales)</Typography>
-            <ResponsiveContainer width={'100%'} aspect={3}>
+            <Typography variant={'h6'} sx={{color: '#909090'}} >{title}</Typography>
+            <ResponsiveContainer width={'100%'} aspect={aspect}>
 
             <AreaChart width={730} height={250} data={data} margin={{top: 10, right: 30, left: 0, bottom: 0}} >
             <defs>
