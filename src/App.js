@@ -33,6 +33,12 @@ function App() {
                         <Route path=':productId' element={<Single/>}/>
                         <Route path='new' element={<New/>}/>
                     </Route>
+                    <Route path='supplier'>
+                        <Route index element={<List/>}/>
+                        <Route path=':supplierId' element={<Single/>}/>
+                        <Route path='new' element={<New/>}/>
+                    </Route>
+
                 </Routes>
         </div>
     );

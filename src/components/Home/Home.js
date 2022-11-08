@@ -23,7 +23,7 @@ const Home = () => {
                 </Box>
                 <Box sx={{display: 'flex'}}>
                     <Featured sx={{flex: 8}} />
-                    <Charts sx={{flex: 8}} title={"Last 6 Months"} aspect={4/1 } />
+                    <Charts sx={{flex: 8}} title={"Last 6 Months"} aspect={4 } />
                 </Box>
                 <Grid sx={{flex: 8}}>
                     <Card sx={{display: 'flex',

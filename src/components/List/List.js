@@ -1,4 +1,4 @@
-import {Avatar, Box, Card, Container, Button} from "@mui/material";
+import { Box, Card, Container, Button} from "@mui/material";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import {DataGrid} from "@mui/x-data-grid";
 import Grid2 from "@mui/material/Unstable_Grid2";
@@ -251,7 +251,7 @@ const List = ({customInputLabelStyles}) => {
 
     return (
 
-        <Container maxWidth={'false'} sx={{display: 'flex', width: '100%', height: '100vh',}}>
+        <Container disableGutters maxWidth={'false'} sx={{display: 'flex', margin: 0}}>
             <Sidebar/>
 
             <Card sx={{height: '100vh', width: '100vw', p: 3}}>
